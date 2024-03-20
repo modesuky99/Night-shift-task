@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Shift Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Night Shift Tsks </h1>
+    </header>
+    <main>
+        <section class="login" id="loginSection">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section class="task-form" id="taskFormSection" style="display: none;">
+            <h2>Add Task</h2>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <input type="date" id="taskDate" required>
+                <input type="text" id="agentName" placeholder="Agent Name" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="task-list" id="taskListSection" style="display: none;">
+            <h2>Task List</h2>
+            <ul id="taskList">
+                <!-- Tasks will be added dynamically here -->
+            </ul>
+        </section>
+        <button id="logoutBtn" style="display: none;">Logout</button>
+        <button id="guestBtn" style="display: none;">Guest View</button>
+    </main>
+    <footer>
+        <p>© 2024 Elm3mly</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
