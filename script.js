@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = usernameInput.value.trim();
         const password = passwordInput.value.trim();
 
-        if (username === "admin" && password === "Night2024") {
+        if (username === "NSFloor" && password === "Night2024") {
             isAdmin = true;
         }
         localStorage.setItem("isAdmin", isAdmin);
